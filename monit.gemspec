@@ -3,14 +3,14 @@ $:.unshift File.expand_path("../lib", __FILE__)
 require "monit/version"
 
 Gem::Specification.new do |gem|
-  gem.authors     = ["Matias Korhonen"]
-  gem.email       = ["me@matiaskorhonen.fi"]
-  gem.homepage    = "http://github.com/k33l0r/monit"
+  gem.authors     = ["Julien Chabanon"]
+  gem.email       = ["julien@chabanon.me"]
+  gem.homepage    = "https://github.com/modulis/monit"
   gem.summary     = "Connect to Monit"
   gem.description = "Retrieve server information from Monit."
   gem.license     = 'MIT'
 
-  gem.name          = "monit"
+  gem.name          = "monit-client"
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
